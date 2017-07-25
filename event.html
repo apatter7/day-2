@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="event.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="event.css">
+	<script src="https://use.fontawesome.com/386b72be77.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="#">Brand</a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">BAND</a></li>
+        <li><a href="#">TOUR</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Youtube Channel</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Facebook Page</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+      <i class="fa fa-search" aria-hidden="true"></i>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/aaron-paul.jpg" alt="Los Angeles">
+      <div class="carousel-caption">
+      	<h3>Miami</h3>
+      	<p><b>Party all night in Miami</b></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/anthony-delanoix.jpg" alt="Chicago">
+      <div class="carousel-caption">
+      	<h3>New York</h3>
+      	<p><b>Much love in New York</b></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/daniel-robert.jpg" alt="New York">
+      <div class="carousel-caption">
+      	<h3>Seattle</h3>
+      	<p><b>Crazy atmosphere in Jet City!</b></p>
+      </div>
+    </div>
+  </div>
+
+<!-- THE BAND -->
+ <div>
+ 	<h1>THE BAND</h1>
+ 	<h4><i>Life is one grand, sweet song, so start the music.</i></h4>
+ 	<p class="band-content">Star stuff harvesting star light prime number a mote of dust suspended in a sunbeam. Prime number venture circumnavigated shores of the cosmic ocean Sea of Tranquility how far away descended from astronomers cosmic ocean rich in heavy atoms, preserve and cherish that pale blue dot brain is the seed of intelligence, network of wormholes radio telescope tesseract colonies extraplanetary venture decipherment globular star cluster intelligent beings a mote of dust suspended in a sunbeam, how far away! From which we spring, Apollonius of Perga. Inconspicuous motes of rock and gas another world and billions upon billions upon billions upon billions upon billions.</p>
+ 	<img src="images/band.jpg" class="band-image">
+ </div>
+
+ <div id="tour-dates">
+ 	<h1>TOUR DATES</h1>
+ 	<h4><i>Remember to book your tickets!</i></h4>
+
+ 	<ul>
+ 		<li class="list">June<span class="sold-out"> Sold Out</span></li>
+ 		<li class="list">July<span class="sold-out"> Sold Out</span></li>
+ 		<li class="list">August<span class="number"> 4</span></li>
+ 	</ul>
+
+<!-- TOUR DATES -->
+ 	<div class="row no-gutter">
+ 	<div id="ny">
+ 		<img src="images/newyork.jpg">
+ 		<div id="words">
+ 			<h5><b>New York</b></h5>
+ 			<span class="date">Fri 27 June 2017</span>
+ 			<p class="ticket-event">Health goth vinyl wayfarers try-hard,<br> pop-up XOXO listicle </p>
+ 			<button class="buy" onclick="div_show()"><a href="#" id="contact"></a>Buy Ticket</button>
+ 		</div>
+ 	</div>
+
+ 	<div id="dub">
+ 		<img src="images/dublin.jpg">
+ 		<div id="words">
+ 			<h5><b>Dublin</b></h5>
+ 			<span class="date">Sat 28 June 2017</span>
+ 			<p class="ticket-event">Health goth vinyl wayfarers try-hard,<br> pop-up XOXO listicle</p>
+ 			<button class="buy" onclick="div_show()"><a href="#" id="contact"></a>Buy Ticket</button>
+ 		</div>
+ 	</div>
+
+ 	<div id="sf">
+ 		<img src="images/sanfran.jpg">
+ 		<div id="words">
+ 			<h5><b>San Fransico</b></h5>
+ 			<span class="date">Sun 29 June 2017</span>
+ 			<p class="ticket-event">Health goth vinyl wayfarers try-hard,<br> pop-up XOXO listicle</p>
+ 			<button class="buy"><a href="#myPopup" class="clickme" id="contact"></a>Buy Ticket</button>
+ 		</div>
+ 	</div>
+
+ 	</div>
+ </div>
+
+ <!-- POP UP CONTACT -->
+ <!-- <div class="cd-popup contact" role="alert" id="myPopup">
+ <form  action="#" id="contactform" method="post" class="contact-form">
+ <header>
+ 	<h2><i class="fa fa-ticket" aria-hidden="true"></i> TICKETS</h2>
+ </header>
+ 	<div class="name">
+ 	<p><i class="fa fa-user" aria-hidden="true"></i> Tickets, $20 per person</p>
+ 	<input  id="amount" type="text" name="" placeholder="How many?">
+ 	<p><i class="fa fa-paper-plane" aria-hidden="true"></i> Send To</p>
+ 	<input id="email" type="email" name="" placeholder="Enter email">
+ 	<button  id="pay">PAY<i class="fa fa-check" aria-hidden="true"></i></button>
+ 	<button class="clicktoclose">Close<i class="fa fa-times" aria-hidden="true"></i></button>
+ 		
+ 	</div>
+ 	
+ </form>
+ 	
+ </div> -->
+
+ <!-- CONTACT -->
+ 	<div>
+ 			<h1>CONTACT</h1>
+ 			<h4 class="fan"><i>Fan? Give us a shout!</i></h4>
+
+ 		<div class="col-lg-6 col-md-6 col-sm-6">	
+ 			<span class="contact"><span class="glyphicon glyphicon-map-marker"></span> New York, US</span>
+ 			<span class="contact"><span class="glyphicon glyphicon-earphone"></span> Phone: 212 000 0000</span>
+ 			<span class="contact"><span class="glyphicon glyphicon-envelope"></span> Email: contact@band.com</span>
+ 		</div>
+
+ 		<div class="col-lg-6 col-md-6 col-sm-6">
+ 		<form>
+ 			
+ 			<input class="col1" type="text" name="" placeholder="Name">
+ 			<input class="col2" type="text" name="" placeholder="Email"><br>
+ 			<input class="col3" type="text" name="" placeholder="Message">
+ 			<button class="submit">Submit</button>
+ 		</form>
+ 		</div>
+ 	</div>
+
+ 	<div>
+ 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6047.624576861498!2d-73.9968598442892!3d40.722148594463434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598c5e51e2f3%3A0xce2f3449f490f818!2sSoHo%2C+New+York%2C+NY!5e0!3m2!1sen!2sus!4v1495085014515" width="1350" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+ 	</div>
+
+ 	<footer>
+ 		<p class="footer">THE BAND TOUR</p>
+ 		<div class="icons">
+ 		<i class="fa fa-facebook-official" aria-hidden="true"></i>
+ 		<i class="fa fa-instagram" aria-hidden="true"></i>
+ 		<i class="fa fa-snapchat" aria-hidden="true"></i>
+ 		<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+ 		<i class="fa fa-twitter" aria-hidden="true"></i>
+ 		<i class="fa fa-linkedin" aria-hidden="true"></i>
+ 		</div>
+ 	</footer>
+</body>
+</html>
